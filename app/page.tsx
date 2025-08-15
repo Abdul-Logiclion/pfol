@@ -5,6 +5,11 @@ import { Github, Linkedin, Mail, ExternalLink, Download, Code, Database, Globe, 
 import Image from "next/image"
 import Link from "next/link"
 import Portfolio from "./components/Portfolio"
+import SideNavigation from "./components/SideNavigation"
 export default function Home() {
-  return <Portfolio/>
+  return  <>
+  <Portfolio/>
+
+  </>
+  
 }

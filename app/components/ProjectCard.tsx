@@ -19,8 +19,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative h-48">
+    <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ">
+      <div className="relative h-32">
         <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
       </div>
       <CardHeader>
@@ -28,9 +28,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-1 mb-4">
           {project.tech.map((tech) => (
-            <Badge key={tech} variant="secondary" className="text-xs">{tech}</Badge>
+            <Badge key={tech}  className="bg-blue-100 text-blue-800 hover:bg-blue-200">{tech}</Badge>
           ))}
         </div>
         <div className="flex space-x-2">
