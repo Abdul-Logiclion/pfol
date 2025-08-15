@@ -37,7 +37,7 @@ export default function HeroSection() {
           Full-Stack Web Developer & Computer Science Graduate
         </p>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-5">
-       My code is destined to shape the future,I want to explore algorithms that define a world where what's possible goes beyond what's limited.
+      My code Writes a new world,a world where possibilities surpass all limits.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -99,3 +99,4 @@ export default function HeroSection() {
   );
 
 }
+
