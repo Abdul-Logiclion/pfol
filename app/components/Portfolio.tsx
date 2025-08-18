@@ -13,9 +13,9 @@ import SkillsSection from "./SkillsSection";
 const portfolioData = {
   skills: {
     frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    backend: ["Node.js", "Python", "Express.js", "Fast API"],
+    backend: ["Node.js", "Python", "Express.js"],
     database: ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
-    tools: ["Git","AWS", "Docker", "Kubernetes", "Vercel", "Linux", "Figma"],
+    tools: ["Git","AWS", "Docker","Figma"],
   },
   projects: [
     {
@@ -27,7 +27,7 @@ const portfolioData = {
       image: "/jobease.png?height=200&width=400&text=JobEase+AI+Agent",
     },
     {
-      title: "AI Product Scraper: Global Market Intelligence",
+      title: "Amazon Product Scraper",
       description: "",
       tech: ["Next.js", "Supabase", "PostgreSQL", "FastAPI", "Scrapy", "Pandas", "Selenium", "BeautifulSoup", "Python"],
       github: "https://github.com/Abdul-logiclion",
@@ -64,12 +64,14 @@ const portfolioData = {
       description: "Speed programming competition winner at SibaFest25.",
       icon: "🏆",
       year: "May '25",
+      link:"https://drive.google.com/file/d/1ZEVVlvjsQiBigDpoP3ZRfJC8f8uvLqIo/view?usp=sharing"
     },
     {
       title: "Runner-Up",
       description: "Runner-Up in CS Society Programming Competition.",
       icon: "🥈",
       year: "Feb '25",
+      link:"https://drive.google.com/file/d/1XGC0feYQsnUsjL9Hsb6iRrpK5iO87nZl/view?usp=sharing"
     },
   ],
     certificates: [
@@ -78,18 +80,21 @@ const portfolioData = {
        platform: "Google",
       icon: "🎓",
       year: "Jul '25",
+      link:"https://www.credly.com/badges/fbd65b22-77a3-44b0-8637-688fce7ddc0d/public_url"
     },
     {
       title: "Back-end development using Node JS",
       platform: "CodeChef",
       icon: "🎓",
       year: "Aug '25",
+      link:"link"
     },
      {
       title: "Back End Development and APIs,",
       platform: "FreeCodeCamp",
       icon: "🎓",
       year: "Jul '25",
+      link:"https://www.freecodecamp.org/certification/abdul-jabar/back-end-development-and-apis"
     }
   ],
 };

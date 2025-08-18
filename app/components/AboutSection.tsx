@@ -43,10 +43,24 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto ">
-                Recent Computer Science graduate with a **passion for full-stack development**. I'm a quick learner and a natural **problem solver** who loves contributing to innovative projects and always eager to take on new challenges.
-              </p>
-              
+<div className="space-y-4 text-lg text-slate-600 dark:text-slate-400">
+  <p>
+    Hello, I'm Abdul. I'm a MERN Stack Developer.
+  </p>
+  <p>
+    I've been fascinated with building and engineering since I was a kid, but it was coding that truly captured my imagination. I was instantly drawn to how quickly I could bring an idea to life and see the tangible output of my work. This drive to create is what led me to pursue a degree in Computer Science.
+  </p>
+  <p>
+    <strong>Fun fact:</strong> I love reading about psychology and quantum physics.
+  </p>
+
+  <p>
+    <strong>Discipline:</strong>
+  </p>
+  <p>
+    Discipline is an important value of mine.  Doing what I've decided is the ultimate form of self-respect and the source of my self-esteem.
+  </p>
+</div>
               <motion.div variants={itemVariants} className="mt-8">
               
                 <div className="flex flex-wrap gap-2">

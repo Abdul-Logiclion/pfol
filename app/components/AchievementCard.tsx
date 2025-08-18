@@ -7,6 +7,7 @@ interface AchievementCardProps {
     description: string;
     icon: string;
     year: string;
+    link: string;
   };
 }
 
@@ -22,6 +23,14 @@ export default function AchievementCard({ achievement }: AchievementCardProps) {
               <Badge  className="text-xs bg-blue-100 text-blue-800 hover:bg-blue-200">{achievement.year}</Badge>
             </div>
             <p className="text-slate-600 dark:text-slate-300 text-sm">{achievement.description}</p>
+             <a 
+                href={achievement.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                Link
+              </a>
           </div>
         </div>
       </CardContent>
