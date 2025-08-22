@@ -49,15 +49,16 @@ export default function SoundToggle() {
   return (
     <div className="
   fixed 
-  bottom-36 -right-10   /* 📱 mobile default */
+  justify-center items-center
+  top-4 left-1/2 -translate-x-1/2 /* 📱 mobile default */
   md:bottom-[15vh] md:right-32  /* 💻 desktop/laptop */
   z-50
 ">
       <button
         onClick={handleToggleSound}
-        className="flex items-center justify-center gap-2 transform -rotate-90"
+        className="flex items-center justify-center md:gap-2 transform md:-rotate-90"
       >
-        <span className="text-lg">SOUND</span>
+        <span className="md:text-lg text-xs">SOUND</span>
         <div className="w-[3ch] flex items-center justify-center">
           <AnimatePresence mode="wait" initial={false}>
             <motion.span
@@ -66,7 +67,7 @@ export default function SoundToggle() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="text-lg tracking-widest"
+              className="text-xs md:text-lg tracking-widest"
             >
               {isMuted ? "OFF" : "ON"}
             </motion.span>
