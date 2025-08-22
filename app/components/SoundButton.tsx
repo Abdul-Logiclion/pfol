@@ -50,7 +50,7 @@ export default function SoundToggle() {
     <div className="
   fixed 
   justify-center items-center
-  top-4 left-1/2 -translate-x-1/2 /* 📱 mobile default */
+  top-4 left-2/3 -translate-x-1/2 /* 📱 mobile default */
 
   md:top-auto md:left-auto md:translate-x-0 md:bottom-[15vh] md:right-10
   
