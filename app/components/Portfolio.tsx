@@ -106,7 +106,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen w-full flex justify-center items-center bg-white font-sans">
-      <main className="mt-9 md:h-[80vh] md:w-[70vw] overflow-auto border border-gray-200 shadow-lg bg-white rounded-lg">
+      <main className="mt-9 md:h-[80vh] md:w-[68vw] overflow-auto border border-gray-200 shadow-lg bg-white rounded-lg">
         <HeroSection />
         <AboutSection />
         <SkillsSection skills={skills} />
