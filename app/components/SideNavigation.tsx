@@ -15,7 +15,7 @@ export default function Navigation() {
   const activeSection = useActiveSection(sectionIds);
 
   return (
-    <nav className="fixed right-4 md:right-12 top-1/4 w-[32vw] sm:w-[20vw] md:w-[10vw] 
+    <nav className="fixed md:right-4 top-1/4 
       bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 overflow-hidden">
       <div className="container flex flex-col space-y-2">
         {sectionIds.map((id) => (

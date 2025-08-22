@@ -21,7 +21,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="pt-3 pb-16 px-4 bg-gray-50 dark:bg-gray-900 font-sans">
+    <section id="hero" className="pt-3  pb-16 px-4 bg-gray-50 dark:bg-gray-900 font-sans">
       <div className="container mx-auto text-center">
         <Image
           src="/profile12.jpg"

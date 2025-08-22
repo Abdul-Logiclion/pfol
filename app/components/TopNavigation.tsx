@@ -16,7 +16,7 @@ export default function TopNavigation() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md z-50 md:hidden">
+    <nav className="fixed top-0 left-0  w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md z-50 md:hidden">
       <div className="flex justify-between items-center px-4 py-3">
         <h1 className="text-lg font-semibold">Portfolio</h1>
         <button onClick={() => setOpen(!open)}>

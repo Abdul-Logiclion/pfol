@@ -51,7 +51,9 @@ export default function SoundToggle() {
   fixed 
   justify-center items-center
   top-4 left-1/2 -translate-x-1/2 /* 📱 mobile default */
-  md:bottom-[15vh] md:right-32  /* 💻 desktop/laptop */
+
+  md:top-auto md:left-auto md:translate-x-0 md:bottom-[15vh] md:right-10
+  
   z-50
 ">
       <button
