@@ -10,19 +10,19 @@ export default function Navigation() {
     "experience",
     "achievements",
     "certifications",
-   
   ];
 
   const activeSection = useActiveSection(sectionIds);
 
   return (
-    <nav className="fixed right-12 top-1/4 w-[10vw] bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50">
+    <nav className="fixed right-4 md:right-12 top-1/4 w-[32vw] sm:w-[20vw] md:w-[10vw] 
+      bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 overflow-hidden">
       <div className="container flex flex-col space-y-2">
         {sectionIds.map((id) => (
           <Link
             key={id}
             href={`#${id}`}
-            className={`transition-colors ${
+            className={`transition-colors truncate ${
               activeSection === id
                 ? "text-blue-600 font-semibold"
                 : "hover:text-blue-600"
@@ -38,13 +38,13 @@ export default function Navigation() {
 
 type ActiveSectionProps = string[];
 
- function useActiveSection(sectionIds:ActiveSectionProps) {
+function useActiveSection(sectionIds: ActiveSectionProps) {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        const visibleSection = entries.find(entry => entry.isIntersecting);
+        const visibleSection = entries.find((entry) => entry.isIntersecting);
         if (visibleSection) {
           setActiveSection(visibleSection.target.id);
         }

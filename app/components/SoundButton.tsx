@@ -47,7 +47,12 @@ export default function SoundToggle() {
   };
 
   return (
-    <div className="fixed bottom-[15vh] right-32 z-50">
+    <div className="
+  fixed 
+  bottom-36 -right-10   /* 📱 mobile default */
+  md:bottom-[15vh] md:right-32  /* 💻 desktop/laptop */
+  z-50
+">
       <button
         onClick={handleToggleSound}
         className="flex items-center justify-center gap-2 transform -rotate-90"

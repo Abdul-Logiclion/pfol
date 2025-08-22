@@ -69,10 +69,10 @@ export default function Chatbot() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 p-4 z-[9999] font-sans">
+    <div className="fixed bottom-16 md:bottom-0 left-0 p-4 z-[9999] font-sans">
       {/* The main chat window, rendered conditionally */}
       {isOpen && (
-        <div className="flex flex-col h-[70vh] w-[20vw] max-w-lg border rounded-lg shadow-lg p-4 bg-white dark:bg-slate-800">
+        <div className="flex flex-col w-[40vw]  md:h-[70vh]  md:w-[20vw]  border rounded-lg shadow-lg p-4 bg-white dark:bg-slate-800">
           <div className="flex justify-between items-center mb-4">
             <h3 className="font-bold text-lg">AI Assistant</h3>
             <Button

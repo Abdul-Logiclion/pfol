@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Chatbot from "./components/Chatbot";
 import SideNavigation from "./components/SideNavigation";
 import SoundToggle from "./components/SoundButton";
+import TopNavigation from "./components/TopNavigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,13 +41,24 @@ export default function RootLayout({
 </head>
       <body className={inter.className}>
         
+          
+        {/* Mobile top bar */}
+        <TopNavigation />
+
+        {/* Desktop side bar */}
+        <div className="hidden md:block">
           <SideNavigation />
-           <SoundToggle />
+        </div>
+
+        <SoundToggle />
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+
         <Analytics />
-        <Chatbot/>
+        <Chatbot />
+      
       </body>
     </html>
   );
